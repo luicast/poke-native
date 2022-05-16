@@ -1,6 +1,7 @@
 import { ScrollView } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import { getPokemonDetailsById } from '../api/Pokemon'
+import Icon from 'react-native-vector-icons/FontAwesome5'
 import Header from '../components/Pokemon/Header'
 import Type from '../components/Pokemon/Type'
 import Stats from '../components/Pokemon/Stats'
@@ -9,7 +10,12 @@ export default function Pokemon(props) {
   const { navigation, route:{ params } } = props
   const [pokemon, setPokemon] = useState(null)
 
-
+  useEffect(() => {
+    navigation.setOptions({
+      headerRight: () => null,
+    })
+  }, [navigation, params])
+  
   useEffect(() => {
     (async () => {
       try {

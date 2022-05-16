@@ -19,13 +19,10 @@ export default function PokedexNav() {
             },
         }} />
         <Stack.Screen name="Pokemon" component={Pokemon} options={{
-            title: 'Pokemon',
+            title: '',
             headerShown: true,
             headerTransparent: true,
             headerShadowVisible: false,
-            headerStyle: {
-                backgroundColor: 'red',
-            },
             headerTintColor: '#fff',
             headerTitleStyle: {
                 fontWeight: 'bold',

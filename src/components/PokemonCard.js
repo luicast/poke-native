@@ -17,7 +17,6 @@ export default function PokemonCard(props) {
   }
 
   const goToPokemon = () => {
-    console.log(pokemon.id);
     navigation.navigate('Pokemon', { id: pokemon.id })
   };
 
