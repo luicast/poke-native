@@ -4,8 +4,8 @@ export const user = {
 }
 
 export const userDetails = {
-    username: 'user',
+    username: 'defaultuser',
     firstName: 'Unknown',
-    lastName: 'User',
+    lastName: 'user',
     email: 'unknow@gmail.com',
 }   
