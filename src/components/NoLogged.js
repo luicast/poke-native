@@ -8,7 +8,7 @@ export default function NoLogged() {
   return (
     <View style={styles.content}>
       <Text style={styles.text}>You need to logged, please</Text>
-      <Button title="Login" onPress={() => navigation.navigate('Account')} />
+      <Button title="go to Login" onPress={() => navigation.navigate('Account')} />
     </View>
   )
 }

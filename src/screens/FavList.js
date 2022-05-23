@@ -1,4 +1,3 @@
-import { View, Text } from 'react-native'
 import React, { useState, useCallback } from 'react'
 import { useFocusEffect } from '@react-navigation/native'
 import { getPokemonsFavorites } from '../api/Favorite'
