@@ -8,6 +8,11 @@ export const AuthContext = React.createContext({
 
 export function AuthProvider({ children }) {
     const [auth, setAuth] = useState(undefined)
+    const [searchValue, setSearchValue] = useState('')
+
+    const handleSearch = (e) => {
+        setSearchValue(e.nativeEvent.text)
+    }
 
     const login = (user) => {
         setAuth(user)
@@ -20,7 +25,9 @@ export function AuthProvider({ children }) {
     const valueContext = {
         auth,
         login,
-        logout
+        logout,
+        searchValue,
+        handleSearch,
     }
 
     return (
